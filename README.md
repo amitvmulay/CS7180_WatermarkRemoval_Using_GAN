@@ -1,6 +1,6 @@
 # CS7180 WatermarkRemoval Using cGAN
 
-##Software Dependencies for train.py
+## Software Dependencies for train.py
 Python 3.7
 CUDA 10.2
 Tensoflow-gpu
