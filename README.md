@@ -1,9 +1,15 @@
 # CS7180 WatermarkRemoval Using cGAN
 
-## Datasets used
+##Software Dependencies for train.py
+Python 3.7
+CUDA 10.2
+Tensoflow-gpu
+
+
+## Dataset
 CLWD <a href="https://drive.google.com/file/d/17y1gkUhIV6rZJg1gMG-gzVMnH27fm4Ij/view?usp=sharing" target="_top">Download Link</a>
 
-### Additional instructions
+### Additional instructions for training the model for Colored Natural Images from CLWD 
 For speeding up the training, use ImgToNpArray.py to generate NumPy array data structure of images from the dataset and save it as .npy file.
 We already have these files created for subset of CLWD dataset (10k watermarked and 10k watermark free images) and stored at following directory "/scratch/mulay.am/datasets/CLWD_1/" and these are accessible from all other repositories. So train.py with provided path for training and testing data shoudl be able to access the data from mentioned folders without any access issue when executed from Discovery Cluster Node by any Discovery account.
 
