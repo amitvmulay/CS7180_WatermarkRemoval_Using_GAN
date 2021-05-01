@@ -1,3 +1,15 @@
+'''
+CS7180 - Watermark removal for natural images using GAN.
+Author - Amit Mulay
+
+Execution instruction on discovery HPC node:
+Required Modules:
+CUDA 10.2
+Python 3.7
+Tensorflow-gpu
+Discovery HPC partition required - gpu size - 128 GB time:08:00:00 (For 50 epochs)
+'''
+
 from tensorflow import keras
 import os
 import numpy as np
@@ -14,6 +26,7 @@ import math
 import random
 import os.path
 
+#For
 X_train_w = np.load("/scratch/mulay.am/datasets/CLWD_1/X_train_w_10k.npy")
 X_train_g = np.load("/scratch/mulay.am/datasets/CLWD_1/X_train_g_10k.npy")
 X_test_w  = np.load("/scratch/mulay.am/datasets/CLWD_1/X_test_w_5.npy")
